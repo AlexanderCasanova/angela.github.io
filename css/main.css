@@ -35,7 +35,7 @@ body {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
       font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
-      margin-bottom: 530px;
+      top: 25px;
       letter-spacing: 3px;
   }
 
@@ -74,6 +74,18 @@ body {
 
 .titulo::-webkit-scrollbar-thumb:hover {
   background: #555; /* Color del scrollbar cuando el usuario pasa el cursor por encima */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
+  .titulo {
+      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
+      top: 100px;
+      width: 80%;
+      height: 60%;
+      letter-spacing: 5px;
+  }
+
 }
 
 @keyframes fadeIn {
